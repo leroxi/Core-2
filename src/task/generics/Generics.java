@@ -1,13 +1,10 @@
-package task.generics;
+package task.collection;
 
-import task.models.BigBox;
-import task.models.MediumBox;
-import task.models.MicroBox;
-import task.models.SmallBox;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Generics {
+
+public class TestBox {
 
 
     public static void main(String[] args) {
@@ -23,9 +20,7 @@ public class Generics {
         mediumBox1.setLength(15);
         mediumBox1.setSize("medium");
         mediumBox1.setWidth(15);
-        System.out.println(checkBoxInList(boxList, mediumBox1));
         addBoxToList(boxList, mediumBox1);
-        printBoxList(boxList, mediumBox1);
         ArrayList<BigBox> sourceList = new ArrayList<>();
         sourceList.add(generateBigBox());
         sourceList.add(generateMediumBox());
@@ -36,27 +31,28 @@ public class Generics {
 
     //TODO: Сделайте рефакторинг метода так , что бы это метод мог работать не только с BigBox , а еще и с любыми его наследниками
     //  используйте для этого дженерики
-    public static <E, D> boolean checkBoxInList(List<E> list, D item) {
+    public static <E extends BigBox> boolean checkBoxInList(List<E> list, E item) {
         return list.contains(item);
     }
 
     //TODO: Таким же образом реализуйте метод добавления коробок в список при помощи дженериков . Тоесть , этот метод будет принимать
     // BigBox и его наследников и добавлять в список BigBox и его наследников
-    public static <Y> void addBoxToList(List<Y> list1, Y box) {
+    public static <Y extends BigBox> void addBoxToList(List<Y> list1, Y box) {
         list1.add(box);
         System.out.println(list1);
     }
 
     //TODO: Так же реализуйте метод который будет проходится по списку с MediumBox и его наследников и выводить на экран содежимое каждого элемента
-    public static <F> void printBoxList(List<F> list2, F box) {
+    public static <F extends MediumBox> void printBoxList(List<F> list2) {
         for (F i : list2) {
             System.out.println(i);
         }
     }
 
     //TODO: реализуйте Метод для копирования элементов из одного списка с BigBox и его наследников в другой список BigBox и его наследников
-    public static <B> void copyBoxes(List<B> sourceList) {
-        ArrayList<B> targetList = new ArrayList<>(sourceList);
+    public static <B extends BigBox> void copyBoxes(List<B> sourceList) {
+        ArrayList<B> targetList;
+        targetList = (ArrayList<B>) new ArrayList<>(sourceList);
     }
 
     private static BigBox generateBigBox() {
