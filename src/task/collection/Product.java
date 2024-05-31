@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 // TODO: Учет товаров на складе:
 //  Создайте класс Product с полями id, name и quantity.
