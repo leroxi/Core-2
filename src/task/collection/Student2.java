@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 // TODO: Учет посещаемости:
 //  Создайте класс Student с полями name и attendance.
