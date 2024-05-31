@@ -1,4 +1,4 @@
-package CORE21;
+package task.models;
 
 import java.util.ArrayList;
 import java.util.List;
