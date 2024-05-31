@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 // TODO: Создание списка студентов:
 //  Создайте класс Student с полями name и age.
