@@ -1,10 +1,15 @@
-package task.collection;
+package task.generics;
 
-import java.util.ArrayList;
+import task.models.BigBox;
+import task.models.MediumBox;
+import task.models.MicroBox;
+import task.models.SmallBox;
 import java.util.List;
+import java.util.ArrayList;
 
 
-public class TestBox {
+
+public class Generics {
 
 
     public static void main(String[] args) {
@@ -21,6 +26,7 @@ public class TestBox {
         mediumBox1.setSize("medium");
         mediumBox1.setWidth(15);
         addBoxToList(boxList, mediumBox1);
+        System.out.println(mediumBox1);
         ArrayList<BigBox> sourceList = new ArrayList<>();
         sourceList.add(generateBigBox());
         sourceList.add(generateMediumBox());
