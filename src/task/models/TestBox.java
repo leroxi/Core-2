@@ -17,16 +17,16 @@ public class TestBox {
         MediumBox mediumBox1 = new MediumBox();
         mediumBox1.setSmallBox(generateSmallBox());
         mediumBox1.setHeight(15);
-       mediumBox1.setLength(15);
-       mediumBox1.setSize("medium");
-       mediumBox1.setWidth(15);
-       addBoxToList(boxList, mediumBox1);
-       System.out.println(mediumBox1);
-       ArrayList<BigBox> sourceList = new ArrayList<>();
-       sourceList.add(generateBigBox());
-       sourceList.add(generateMediumBox());
-       sourceList.add(generateSmallBox());
-       sourceList.add(generateMicroBox());
+        mediumBox1.setLength(15);
+        mediumBox1.setSize("medium");
+        mediumBox1.setWidth(15);
+        addBoxToList(boxList, mediumBox1);
+        System.out.println(mediumBox1);
+        ArrayList<BigBox> sourceList = new ArrayList<>();
+        sourceList.add(generateBigBox());
+        sourceList.add(generateMediumBox());
+        sourceList.add(generateSmallBox());
+        sourceList.add(generateMicroBox());
 
     }
 
