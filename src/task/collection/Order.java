@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 // TODO: Учет заказов:
 //  Создайте класс Order с полями id, customer и totalAmount.
