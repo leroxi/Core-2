@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 // TODO: Управление задачами:
 //  Создайте класс Task с полями id, title и isCompleted.
