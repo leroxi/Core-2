@@ -133,7 +133,7 @@ public class Collection {
         System.out.println(listOfStudents);
     }
 
-    public static List listOfStudents(List<Student> listOfStudents) {
+    public static List<Student> listOfStudents(List<Student> listOfStudents) {
         ArrayList<Student> adultStudents = new ArrayList<>();
         for (Student i : listOfStudents) {
             if (i.getAge() > 15) {
@@ -143,7 +143,7 @@ public class Collection {
         return adultStudents;
     }
 
-    public static List getZeroQuantityProducts(List<Product> listOfProducts) {
+    public static List<Product> getZeroQuantityProducts(List<Product> listOfProducts) {
         ArrayList<Product> nullProducts = new ArrayList<>();
         for (Product i : listOfProducts) {
             if (i.getQuantity() == 0) {
