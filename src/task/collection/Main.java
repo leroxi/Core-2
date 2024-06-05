@@ -1,4 +1,4 @@
-package CORE2;
+package task.collection;
 
 import java.util.ArrayList;
 
