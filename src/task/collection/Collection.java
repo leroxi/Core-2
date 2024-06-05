@@ -192,13 +192,15 @@ public class Collection {
         return listOfUncompletedTasks;
     }
 
-    public static List<Task> getSpecificTitleTask(List<Task> listOfTasks) {
+    public static List<Task> getSpecificTitleTask(List<Task> listOfTasks, String typeOfTask) {
         ArrayList<Task> listOfUniqueName = new ArrayList<>();
+        typeOfTask = "Сумма";
         for (Task i : listOfTasks) {
-            if (i.getTitle().equals("Сумма")) {
+            if (i.getTitle().equals(typeOfTask)) {
                 listOfUniqueName.add(i);
             }
         }
+
         return listOfUniqueName;
     }
 }
