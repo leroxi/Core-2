@@ -35,7 +35,7 @@ public class Generics {
     //TODO: Сделайте рефакторинг метода так , что бы это метод мог работать не только с BigBox , а еще и с любыми его наследниками
     //  используйте для этого дженерики
     public static <E extends BigBox> boolean checkBoxInList(List<E> boxList, E box) {
-        return list.contains(box);
+        return boxList.contains(box);
     }
 
     //TODO: Таким же образом реализуйте метод добавления коробок в список при помощи дженериков . Тоесть , этот метод будет принимать
