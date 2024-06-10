@@ -5,6 +5,7 @@ import task.models.MediumBox;
 import task.models.MicroBox;
 import task.models.SmallBox;
 import java.util.List;
+import java.util.ArrayList;
 
 
 public class Generics {
